@@ -28,16 +28,16 @@ const expected4 = [1];
  * @returns {Array<number>} The given array deduped.
  */
 function dedupeSorted(nums) {
-    let i = 0
-    while(i<nums.length){
-        for(let j = i+1; j<nums.length; j++){
-            if(nums[j] == nums[i]){
-                nums.pop(nums[j])
-            }
-        }
-        i++
+  let i = 0
+  while (i < nums.length) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[j] == nums[i]) {
+        nums.pop(j)
+      }
     }
-    return nums
+    i++
+  }
+  return nums
 }
 console.log(dedupeSorted(nums1))
 console.log(dedupeSorted(nums2))
