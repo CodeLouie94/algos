@@ -58,7 +58,6 @@ function findConsqSums(nums, targetSum) {
         let sum = 0
         for (let j = i; j < nums.length; j++) {
             sum += nums[j]
-            console.log(sum)
             if (sum < targetSum) {
                 temp.push(nums[j])
             } else if (sum == targetSum) {
@@ -68,8 +67,6 @@ function findConsqSums(nums, targetSum) {
                     temp.push(nums[k])
                     result.push(temp)
                 }
-                temp = []
-                break
             } else {
                 temp = []
                 break
