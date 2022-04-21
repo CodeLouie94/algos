@@ -39,6 +39,7 @@ function firstNonRepeated(nums) {
       table[nums[i]]++
     }
   }
+  console.log(table)
   for(let key in table){
     if(table[key] === 1){
       return key
