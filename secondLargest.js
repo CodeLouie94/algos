@@ -15,8 +15,8 @@ const nums2 = [4, 1, 3, 2];
 const expected2 = 3;
 
 // largest duplicated first
-const nums3 = [4, 4, 4, 1, 3, 2];
-const expected3 = 3;
+const nums3 = [4, 4, 4, 1, 3, 2, 5];
+const expected3 = 4;
 
 // 2nd largest is first
 const nums4 = [3, 1, 4, 2];
