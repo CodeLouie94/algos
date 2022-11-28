@@ -24,3 +24,14 @@ function moveZeros(arr) {
     }
     return arr
 }
+
+//or
+
+var moveZeros = function (arr) {
+    return arr.filter(function (x) { return x !== 0 }).concat(arr.filter(function (x) { return x === 0; }));
+}
+
+//or
+function moveZeros(arr) {
+    return arr.filter(i => i !== 0).concat(arr.filter(j => j === 0))
+}
