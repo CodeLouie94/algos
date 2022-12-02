@@ -40,7 +40,7 @@ Follow up: Suppose there are lots of incoming s, say s1, s2, ..., sk where k >= 
  * @param {string} t
  * @return {boolean}
  */
-var isSubsequence = function (s, t) {
+ var isSubsequence = function (s, t) {
     let idx = -1
     for (let i of s) {
         if (!t.includes(i, idx)) {
