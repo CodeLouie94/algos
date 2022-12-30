@@ -9,3 +9,4 @@ Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 function friend(friends) {
     return friends.filter(friend => friend.length === 4)
 }
+
