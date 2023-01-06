@@ -1,4 +1,4 @@
-/* 
+/*
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
 Examples input/output:
@@ -10,16 +10,10 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
 
+
 function XO(str) {
-    str = str.toLowerCase()
-    let x = 0
-    let o = 0
-    for (let letter of str) {
-        if (letter == "x") {
-            x += 1
-        } else if (letter == "o") {
-            o += 1
-        }
-    }
-    return x == o
+  str = str.toLowerCase()
+  let strX = str.split("").filter(a => a == "x")
+  let strO = str.split("").filter(b => b == "o")
+  return strX.length == strO.length
 }
